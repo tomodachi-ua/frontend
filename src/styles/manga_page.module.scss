@@ -1,0 +1,8 @@
+@use "variables";
+
+.wrapper {
+  @include variables.flex-direction-row(row);
+  flex-wrap: nowrap;
+  @include variables.align-items(flex-start);
+  gap: 20px;
+}

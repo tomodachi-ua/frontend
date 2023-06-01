@@ -1,0 +1,16 @@
+@use "variables";
+@import "_reset.css";
+@import "fontface";
+
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  @include variables.dispFlex();
+  @include variables.align-items(center);
+  @include variables.justify-content(space-between);
+}
+
+body {
+  font-family: "Mulish", sans-serif;
+}

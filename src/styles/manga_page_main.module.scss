@@ -1,0 +1,56 @@
+@use "variables";
+
+.main_content {
+  flex: 2;
+}
+
+.title {
+  width: 90%;
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: -0.05em;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 20px;
+}
+.list {
+  @include variables.dispFlex();
+  @include variables.flex-direction-row(row);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 20px;
+  gap: 20px;
+}
+
+.list_title {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.item {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: variables.$accent-font-color;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.text {
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  line-height: 120%;
+  color: #161616;
+}

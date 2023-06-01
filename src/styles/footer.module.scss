@@ -1,0 +1,49 @@
+@use "variables";
+
+.footer {
+  @include variables.dispFlex();
+  @include variables.align-items(center);
+  box-sizing: border-box;
+  box-shadow: 0 0 30px rgba(144, 191, 215, 0.44);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.6);
+  height: 130px;
+  margin-top: 50px;
+  grid-row: 3;
+}
+
+.contacts_title, .donate_title {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 20px;
+}
+.contacts_list, .donate_list {
+  @include variables.dispFlex();
+  @include variables.justify-content(space-between);
+}
+
+.contacts_list_item, .donate_list_item {
+  text-decoration: none;
+  color: #161616;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacts_list_icon {
+  width: 30px;
+  height: 30px;
+  fill: #161616;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    fill: variables.$accent-font-color;
+  }
+}
+
+
+
+.donate_list_item {
+  @include variables.hover-underline();
+}

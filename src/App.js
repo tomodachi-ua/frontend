@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import {Routes, Route, BrowserRouter} from "react-router-dom";
 
+import './App.css';
+import Layout from "./pages/Layout";
+import About from "./pages/About";
+import "./styles/common.scss"
+import MangaList from "./pages/MangaList";
+import MangaPage from "./pages/MangaPage";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <BrowserRouter>
+          <Routes>
+            <Route element={<Layout/>}>
+              <Route path="/" element={<About/>}/>
+              <Route path="/manga" element={<MangaList/>}/>
+              <Route path="/manga/:id" element={<MangaPage/>}/>
+            </Route>
+            {/*<Route path='*' element={<Error404Page/>}/>*/}
+          </Routes>
+        </BrowserRouter>
+    );
 }
 
 export default App;

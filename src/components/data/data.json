@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "name": "Про моє переродження в слиз ",
+    "alternativeNames": ["Tensei shitara Slime Datta Ken", "転生したらスライムだった件", "That Time I Got Reincarnated as a Slime"],
+    "author": "Фусе, Тайкі Кавакамі",
+    "cover": "https://manga.in.ua/uploads/posts/2023-06/1685570164_0068-001-min.jpg",
+    "genres": [
+      "Бойовик", "Демони", "Комедія", "Наукова", "фантастика", "Пригоди", "Фентезі", "Шьонен"
+    ],
+    "type": "MANGA",
+    "description": "Тридцятисемирічний Сатору Мікамі є звичайним працівником, який задоволений своїм монотонним життям в Токіо, але йому ніколи не вдавалось знайти дівчину. Під час зустрічі із колегою по роботі, він стає жертвою випадкового нападу на вулиці та отримує ножове поранення. Стікаючи кров’ю, він раптом почув голос у своїй голові, що вимовляв команди, які чоловік не міг зрозуміти.",
+    "status": "ONGOING",
+    "translationStatus": "IN_PROGRESS",
+    "chaptersCount": 105,
+    "translatedChaptersCount": 68
+  },
+  {
+    "id": 2,
+    "name": "Manga NeJaba",
+    "alternativeNames": ["Manga1", "Manga2", "Manga3"],
+    "author": "Hayao Miodzaki",
+    "cover": "https://manga.in.ua/uploads/posts/2022-10/1665568982_1-4.jpg",
+    "genres": [
+      "Drama",
+      "Yri",
+      "Comedy"
+    ],
+    "type": "ONESHOT",
+    "description": "Hi my name is Rome",
+    "status": "PUBLISHED",
+    "translationStatus": "DONE",
+    "chaptersCount": 1,
+    "translatedChaptersCount": 1
+  },
+  {
+    "id": 3,
+    "name": "Manga Romanchik jabist",
+    "alternativeNames": ["Manga1", "Manga2", "Manga3"],
+    "author": "Hayao Miodzaki",
+    "cover": "https://manga.in.ua/uploads/posts/2023-03/1680121182_bez-nazvi-1.jpg",
+    "genres": [
+      "Drama",
+      "Yri",
+      "Comedy"
+    ],
+    "type": "MANHWA",
+    "description": "Hi my name is Rome",
+    "status": "PUBLISHED",
+    "translationStatus": "IN_PROGRESS",
+    "chaptersCount": 85,
+    "translatedChaptersCount": 5
+  },
+  {
+    "id": 4,
+    "name": "Manga Romanchik jabist",
+    "alternativeNames": ["Manga1", "Manga2", "Manga3"],
+    "author": "Hayao Miodzaki",
+    "cover": "https://manga.in.ua/uploads/posts/2023-03/1680121182_bez-nazvi-1.jpg",
+    "genres": [
+      "Drama",
+      "Yri",
+      "Comedy"
+    ],
+    "type": "MANHWA",
+    "description": "Hi my name is Rome",
+    "status": "PUBLISHED",
+    "translationStatus": "IN_PROGRESS",
+    "chaptersCount": 85,
+    "translatedChaptersCount": 5
+  },
+  {
+    "id": 5,
+    "name": "Manga Romanchik jabist",
+    "alternativeNames": ["Manga1", "Manga2", "Manga3"],
+    "author": "Hayao Miodzaki",
+    "cover": "https://manga.in.ua/uploads/posts/2023-03/1680121182_bez-nazvi-1.jpg",
+    "genres": [
+      "Drama",
+      "Yri",
+      "Comedy"
+    ],
+    "type": "MANHWA",
+    "description": "Hi my name is Rome",
+    "status": "PUBLISHED",
+    "translationStatus": "IN_PROGRESS",
+    "chaptersCount": 85,
+    "translatedChaptersCount": 5
+  },
+  {
+    "id": 6,
+    "name": "Manga Romanchik jabist",
+    "alternativeNames": ["Manga1", "Manga2", "Manga3"],
+    "author": "Hayao Miodzaki",
+    "cover": "https://manga.in.ua/uploads/posts/2023-03/1680121182_bez-nazvi-1.jpg",
+    "genres": [
+      "Drama",
+      "Yri",
+      "Comedy"
+    ],
+    "type": "MANHWA",
+    "description": "Hi my name is Rome",
+    "status": "PUBLISHED",
+    "translationStatus": "IN_PROGRESS",
+    "chaptersCount": 85,
+    "translatedChaptersCount": 5
+  },
+  {
+    "id": 7,
+    "name": "Manga Romanchik jabist",
+    "alternativeNames": ["Manga1", "Manga2", "Manga3"],
+    "author": "Hayao Miodzaki",
+    "cover": "https://manga.in.ua/uploads/posts/2023-03/1680121182_bez-nazvi-1.jpg",
+    "genres": [
+      "Drama",
+      "Yri",
+      "Comedy",
+      "Yri",
+      "Comedy",
+      "Yri",
+      "Comedy"
+    ],
+    "type": "MANHWA",
+    "description": "Hi my name is Rome",
+    "status": "PUBLISHED",
+    "translationStatus": "IN_PROGRESS",
+    "chaptersCount": 85,
+    "translatedChaptersCount": 5
+  }
+]

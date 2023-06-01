@@ -1,0 +1,53 @@
+@mixin dispFlex() {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+@mixin align-items($align) {
+    -webkit-box-align: $align;
+    -ms-flex-align: $align;
+    align-items: $align;
+}
+
+@mixin justify-content($justify) {
+    -webkit-box-pack: $justify;
+    -ms-flex-pack: $justify;
+    justify-content: $justify;
+}
+
+@mixin flex-direction-row($row) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $row;
+    flex-direction: $row;
+}
+
+@mixin flex-direction-column($column) {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: $column;
+    flex-direction: $column;
+}
+
+$accent-font-color: #8FBED5;
+$header-height: 80px;
+$footer-height: 130px;
+
+
+@mixin hover-underline() {
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0;
+        height: 2px;
+        background-color: $accent-font-color;
+        transition: width 0.3s ease-in-out;
+    }
+    &:hover::after {
+        width: 100%;
+    }
+}

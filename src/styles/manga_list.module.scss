@@ -1,0 +1,13 @@
+@use "variables";
+
+.wrapper {
+  flex-wrap: wrap;
+  @include variables.align-items(flex-start);
+  @include variables.justify-content(flex-start);
+  gap: 40px;
+  box-sizing: border-box;
+}
+
+.manga_list {
+
+}

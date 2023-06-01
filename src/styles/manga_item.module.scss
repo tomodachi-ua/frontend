@@ -1,0 +1,72 @@
+@use "variables";
+
+.manga_item {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px;
+  text-decoration: none;
+  color: #161616;
+  width: 250px;
+}
+
+.img_wrap {
+  position: relative;
+  width: 250px;
+}
+
+.chapters_count {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.99);
+  border-radius: 10px;
+  font-weight: 800;
+  font-size: 16px;
+  color: #90BFD7;
+  padding: 10px;
+}
+
+.img {
+  width: 250px;
+  transform: scale(1.1);
+  border-radius: 10px;
+}
+
+.description {
+  margin-top: 25px;
+}
+
+.name {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 21px;
+  color: #161616;
+  margin-bottom: 6px;
+}
+
+.genre:not(:last-child) {
+  margin-right: 5px;
+}
+
+.type, .genres {
+  font-weight: 600;
+  font-size: 16px;
+  color: #161616;
+  margin-bottom: 6px;
+}
+
+.genre {
+  transition: all 0.1s ease-in-out;
+  @include variables.hover-underline();
+}
+
+.genres {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  color: variables.$accent-font-color;
+}
+
+.type {
+  margin-top: 10px;
+}

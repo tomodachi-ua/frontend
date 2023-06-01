@@ -1,0 +1,27 @@
+@use "variables";
+
+.progress_bar {
+  margin-top: 10px;
+  background-color: #e3e3e3;
+  border-radius: 5px;
+}
+.progress_bar_fill {
+  border-radius: 5px;
+  background-color: variables.$accent-font-color;
+}
+.title {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #161616;
+  margin-top: 40px;
+}
+
+.progress {
+  font-weight: 800;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 10px;
+}

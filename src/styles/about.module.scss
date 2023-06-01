@@ -1,0 +1,48 @@
+@use "variables";
+
+.wrapper {
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.5);
+  @include variables.flex-direction-column(column);
+}
+
+.title {
+  width: 50vw;
+  font-weight: 800;
+  font-size: 50px;
+  letter-spacing: -0.05em;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #161616;
+  align-self: flex-start;
+  text-shadow:  0 0 15px rgba(255, 255, 255, 0.7);
+
+  &_accent {
+    color: variables.$accent-font-color;
+  }
+}
+
+.subtitle {
+  width: 50vw;
+  margin: 50px 0 20px;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #161616;
+  align-self: flex-end;
+  text-align: end;
+
+}
+
+.text {
+  width: 50vw;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #161616;
+  align-self: flex-end;
+  text-align: end;
+}
