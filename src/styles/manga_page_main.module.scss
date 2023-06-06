@@ -12,7 +12,7 @@
   line-height: 130%;
   text-transform: uppercase;
   color: #161616;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 .list {
   @include variables.dispFlex();
@@ -23,7 +23,7 @@
   text-transform: uppercase;
   color: #161616;
   margin-bottom: 20px;
-  gap: 20px;
+  gap: 10px;
 }
 
 .list_title {
@@ -53,4 +53,9 @@
   letter-spacing: 0.05em;
   line-height: 120%;
   color: #161616;
+}
+
+.alt_names_item:not(:last-child):after {
+  content: "/";
+  margin-left: 10px;
 }
