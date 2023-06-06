@@ -1,0 +1,46 @@
+@use "variables";
+
+.subtitle {
+  width: 100%;
+  margin: 20px 0;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: variables.$accent-font-color;
+  color: #ffffff;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    background-color: variables.$accent-hover-font-color;
+  }
+
+  position: relative;
+}
+
+.description {
+  width: 70%;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 120%;
+  color: #161616;
+  text-align: center;
+}
+
+.about_item {
+  @include variables.dispFlex();
+  @include variables.flex-direction-column(column);
+  @include variables.align-items(center);
+  width: 100%;
+}
+
+.more_btn {
+  position: absolute;
+  right: 10px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+}
