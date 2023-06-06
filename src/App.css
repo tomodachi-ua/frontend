@@ -1,7 +1,7 @@
 
 body {
     margin: 0;
-    background-image: url("./assets/images/background-manga.png"),
+    background-image: url("./assets/images/manga.svg"),
     url("./assets/images/background-tomo.png");
     background-size: contain, contain;
     background-position: left center, right center;
