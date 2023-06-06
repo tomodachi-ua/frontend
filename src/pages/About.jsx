@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "../styles/about.module.scss";
+import about from "../components/data/about.json";
+import AboutItem from "../components/AboutItem";
 
 const Layout = () => {
     return (
@@ -8,10 +10,9 @@ const Layout = () => {
                 <h1 className={styles.title}>Команда перекладу манги на солов'їну - <span
                     className={styles.title_accent}>Tomodachi</span>.</h1>
 
-                <h2 className={styles.subtitle}>Хто ми та чим ми займаємось?</h2>
-                <p className={styles.text}>
-                    Наша команда була заснована 7 травня 2022 року. Все розпочалось з любові групки друзів до манґи та
-                    ідеї перекладати слиз. І ось, нам вже 1 рік - ми працюємо не над одним лише слизом, у нас чудова команда, чудові читачі.</p>
+                {about.map(about_item =>
+                    <AboutItem data={about_item}/>
+                )}
             </div>
         </main>
     );
