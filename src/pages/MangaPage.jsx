@@ -5,7 +5,7 @@ import {useOutletContext, useParams} from "react-router-dom";
 import data from "../components/data/data.json";
 import MangaPageMain from "../components/MangaPageMain";
 import MangaPageAside from "../components/MangaPageAside";
-import {getManga} from "../Logic/requests";
+// import {getManga} from "../Logic/requests";
 
 const MangaPage = () => {
     const [loading, setLoading] = useOutletContext();
