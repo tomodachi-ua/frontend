@@ -1,16 +1,30 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import styles from "../styles/manga_list.module.scss";
 import data from "../components/data/data.json";
 import MangaItem from "../components/MangaItem";
+import {getAllMangas} from "../Logic/requests";
+import {useOutletContext} from "react-router-dom";
 
 const MangaList = () => {
+    const [loading, setLoading] = useOutletContext();
+    const [mangaList, setMangaList] = useState([]);
+
+    useEffect(() => {
+        setLoading(true);
+        getAllMangas().then(response => {
+            setMangaList(response.data);
+        }).catch(error => {
+            console.log(error);
+        })
+        setLoading(false);
+    }, [])
+
+
     return (
         <main className={styles.manga_list}>
             <div className={`wrapper ${styles.wrapper}`}>
-                {data.map(manga => (
-                    <MangaItem key={manga.id} name={manga.name} cover={manga.cover} genres={manga.genres}
-                               type={manga.type} chaptersCount={manga.chaptersCount}
-                               translatedChaptersCount={manga.translatedChaptersCount} id={manga.id}/>
+                {mangaList.map(manga => (
+                    <MangaItem key={manga.id} manga={manga}/>
                 ))}
             </div>
         </main>

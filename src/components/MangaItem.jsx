@@ -4,10 +4,10 @@ import {Link} from "react-router-dom";
 import {Type} from "./data/enum"
 
 const MangaItem = (props) => {
-    const {name, cover, genres, type, chaptersCount, translatedChaptersCount, id} = props;
+    const {manga} = props;
     const [mangaType, setMangaType] = useState("");
     useEffect(() => {
-        switch (type) {
+        switch (manga.type) {
             case "MANGA":
                 setMangaType(Type.MANGA);
                 break;
@@ -25,16 +25,16 @@ const MangaItem = (props) => {
 
 
     return (
-        <Link to={`/manga/${id}`} className={styles.manga_item}>
+        <Link to={`/manga/${manga.id}`} className={styles.manga_item}>
             <div className={styles.img_wrap}>
-                <img src={cover} className={styles.img} alt="cover not found"/>
+                <img src={manga.coverUrl} className={styles.img} alt="cover not found"/>
                 <p className={styles.chapters_count}>
-                    {translatedChaptersCount} / {chaptersCount}
+                    {manga.translatedChaptersCount} / {manga.chaptersCount}
                 </p>
             </div>
             <div className={styles.description}>
-                <h6 className={styles.name}>{name}</h6>
-                <p className={styles.genres}>{genres.map(genre => (
+                <h6 className={styles.name}>{manga.name}</h6>
+                <p className={styles.genres}>{manga.genres.map(genre => (
                     <span className={styles.genre}>{genre}</span>
                 ))}</p>
                 <p className={styles.type}>{mangaType}</p>
