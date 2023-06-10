@@ -16,7 +16,7 @@ const MangaInfoItem = (props) => {
         )
     } else {
         return (
-            <div>
+            <div className={props.infoStyle}>
                 <h6 className={props.titleStyle}>
                     {props.title}
                 </h6>
