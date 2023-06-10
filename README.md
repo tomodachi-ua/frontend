@@ -16,14 +16,6 @@ You need to clone 3 repositories to the folder:
 * backend
 * tomodachi_deploy
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
 The second step is to download the [docker](https://www.docker.com/)
 
 The third step is to run
