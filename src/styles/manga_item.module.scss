@@ -67,8 +67,9 @@
 }
 
 .genres {
-  overflow-x: hidden;
+  overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   color: variables.$accent-font-color;
 }
 
