@@ -60,4 +60,24 @@
     @include variables.flex-direction-column(column);
     gap: 50px;
   }
+
+  .contacts_list_icon {
+    width: 45px;
+    height: 45px;
+  }
+  .donate_list {
+    font-size: 20px;
+  }
+  .contacts_wrap {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .donate_wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contacts_title, .donate_title {
+    text-align: center;
+  }
 }
