@@ -44,3 +44,22 @@
   bottom: 0;
   margin: auto 0;
 }
+
+@media only screen and (max-width: 1200px){
+  .subtitle {
+    font-size: 20px;
+    padding: 5px 35px;
+  }
+  .description {
+    width: 90%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    box-shadow: 0 0 15px rgba(189, 189, 189, 0.66);
+  }
+  .more_btn {
+    height: 30px;
+    width: 30px;
+  }
+}
