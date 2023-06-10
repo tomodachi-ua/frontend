@@ -1,41 +1,47 @@
-import React from "react";
+import React, {useEffect, useRef, useState} from "react";
 import {Link} from "react-router-dom";
 import styles from "../styles/header.module.scss";
 import logo from "../assets/icons/tomodachi-logo.svg"
+import "../styles/burger_menu.scss"
+import BurgerMenu from "./BurgerMenu";
+import HeaderNav from "./HeaderNav";
 
 const Header = () => {
-    return (
-        <header className={styles.header}>
-            <div className="wrapper">
-                <Link to="/" className={styles.go_home}>
-                    <img src={logo} alt="TOMODACHI" className={styles.logo}/>
-                </Link>
+    const [isOpen, setIsOpen] = useState(false);
 
-                <button className={styles.burger}>
-                    <svg width="26" height="18" viewBox="0 0 26 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M1 9H25M1 1H25M1 17H25" stroke="#161616" stroke-width="1.5" stroke-linecap="round"
-                              stroke-linejoin="round"/>
-                    </svg>
-                </button>
-                <nav className={styles.nav}>
-                    <ul className={styles.nav_list}>
-                        <li className={styles.nav_list_item}>
-                            <Link to="/" className={styles.nav_list_link}>
-                                Головна
-                            </Link>
-                        </li>
-                        <li className={styles.nav_list_item}>
-                            <Link to="/manga" className={styles.nav_list_link}>
-                                Манґа
-                            </Link>
-                        </li>
-                        <li className={styles.nav_list_item}>
-                            <Link to="/join" className={styles.nav_list_link}>
-                                Приєднатись до команди
-                            </Link>
-                        </li>
-                    </ul>
-                </nav>
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+        if (document.body.classList.contains('burger-menu')) {
+            document.body.classList.remove('burger-menu');
+        } else {
+            document.body.classList.add('burger-menu');
+        }
+    };
+
+    const closeMenu = () => {
+        setIsOpen(false);
+        document.body.classList.remove('burger-menu');
+    };
+
+    return (
+        <header className={`${styles.header} header`}>
+            <div className={`wrapper ${styles.wrapper}`}>
+                <div className={styles.mobile_wrap}>
+                    <Link to="/" className={styles.go_home}>
+                        <img src={logo} alt="TOMODACHI" className={styles.logo}/>
+                    </Link>
+
+                    <input type="checkbox" id="navbar-toggle" checked={isOpen} onChange={toggleMenu} />
+                    <label htmlFor="navbar-toggle" className="burger-menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+
+                <HeaderNav/>
+
+                <BurgerMenu styles={styles} isOpen={isOpen} onClickCloseMenu={closeMenu}/>
             </div>
         </header>
     );

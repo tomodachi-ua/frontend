@@ -43,7 +43,50 @@
   display: none;
 }
 
-@media only screen and (max-width: 1200px) {
+.contacts_title, .donate_title {
+  font-weight: 800;
+  font-size: 25px;
+  line-height: 150%;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.contacts_list, .donate_list {
+  @include variables.dispFlex();
+  @include variables.justify-content(space-between);
+}
+
+.contacts_list_item, .donate_list_item {
+  text-decoration: none;
+  color: #161616;
+  transition: all 0.2s ease-in-out;
+}
+
+.contacts_list_icon {
+  width: 45px;
+  height: 45px;
+  fill: #161616;
+  transition: all 0.1s ease-in-out;
+  &:hover {
+    transform: scale(1.1);
+    fill: variables.$accent-font-color;
+  }
+}
+
+.contacts_wrap {
+  margin: auto auto 0;
+  width: 90%;
+}
+.donate_wrap {
+  width: 90%;
+  margin: 50px auto;
+}
+
+.donate_list {
+  font-size: 20px;
+}
+@media only screen and (max-width: 650px) {
   .nav {
     display: none;
   }
@@ -53,5 +96,18 @@
     background-color: transparent;
     display: block;
   }
+
+  .wrapper {
+    @include variables.flex-direction-column(column);
+  }
+  .mobile_wrap {
+    width: 100%;
+    @include variables.dispFlex();
+    @include variables.flex-direction-row(row);
+    @include variables.justify-content(space-between);
+    @include variables.align-items(center);
+  }
+
 }
+
 
