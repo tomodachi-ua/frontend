@@ -48,3 +48,16 @@
 .donate_list_item {
   @include variables.hover-underline();
 }
+
+
+
+@media only screen and (max-width: 500px){
+  .footer {
+    padding: 50px 0;
+    height: unset;
+  }
+  .wrapper {
+    @include variables.flex-direction-column(column);
+    gap: 50px;
+  }
+}
