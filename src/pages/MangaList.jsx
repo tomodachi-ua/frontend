@@ -1,6 +1,5 @@
 import React, {useEffect, useState} from "react";
 import styles from "../styles/manga_list.module.scss";
-import data from "../components/data/data.json";
 import MangaItem from "../components/MangaItem";
 import {getAllMangas} from "../Logic/requests";
 import {useOutletContext} from "react-router-dom";

@@ -8,6 +8,11 @@
   box-sizing: border-box;
 }
 
-.manga_list {
+
+@media only screen and (max-width: 1200px){
+  .wrapper {
+    @include variables.flex-direction-column(column);
+    @include variables.align-items(center);
+  }
 
 }
