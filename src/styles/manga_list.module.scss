@@ -6,13 +6,16 @@
   @include variables.justify-content(flex-start);
   gap: 40px;
   box-sizing: border-box;
-}
 
 
-@media only screen and (max-width: 1200px){
-  .wrapper {
+  @media only screen and (max-width: 1200px) {
+    @include variables.justify-content(center);
+  }
+
+  @media only screen and (max-width: 500px) {
     @include variables.flex-direction-column(column);
     @include variables.align-items(center);
   }
 
 }
+
