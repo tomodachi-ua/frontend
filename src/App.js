@@ -7,6 +7,8 @@ import "./styles/common.scss"
 import MangaList from "./pages/MangaList";
 import MangaPage from "./pages/MangaPage";
 import JoinPage from "./pages/JoinPage";
+import Error404Page from "./pages/Error404Page";
+
 
 function App() {
     return (
@@ -18,7 +20,7 @@ function App() {
                     <Route path="/manga/:id" element={<MangaPage/>}/>
                     <Route path="/join" element={<JoinPage/>}/>
                 </Route>
-                {/*<Route path='*' element={<Error404Page/>}/>*/}
+                <Route path='*' element={<Error404Page/>}/>
             </Routes>
         </BrowserRouter>
     );
