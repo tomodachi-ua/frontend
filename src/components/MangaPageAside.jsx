@@ -1,7 +1,6 @@
-import React, {useEffect, useState} from "react";
+import React from "react";
 import MangaInfoItem from "./MangaInfoItem";
 import styles from "../styles/manga_page_aside.module.scss";
-import {useOutletContext} from "react-router-dom";
 import {TranslationStatus} from "./data/enum";
 import {Status} from "./data/enum";
 
