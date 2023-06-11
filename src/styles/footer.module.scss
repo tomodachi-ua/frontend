@@ -13,17 +13,44 @@
   grid-row: 3;
 }
 
+.wrapper {
+  @include variables.dispFlex();
+  @include variables.align-items(center);
+}
+
+.contacts_wrap, .donate_wrap {
+  flex: 1;
+}
+
 .contacts_title, .donate_title {
   font-weight: 800;
-  font-size: 25px;
+  font-size: 15px;
   line-height: 150%;
   text-transform: uppercase;
   color: #161616;
   margin-bottom: 20px;
 }
+
+.donate_title {
+  text-align: end;
+}
+
 .contacts_list, .donate_list {
   @include variables.dispFlex();
-  @include variables.justify-content(space-between);
+  gap: 20px;
+  @media only screen and (max-width: 500px) {
+    @include variables.justify-content(center);
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .contacts_list {
+    @include variables.justify-content(flex-start);
+  }
+
+  .donate_list {
+    @include variables.justify-content(flex-end);
+  }
 }
 
 .contacts_list_item, .donate_list_item {
@@ -37,6 +64,7 @@
   height: 30px;
   fill: #161616;
   transition: all 0.1s ease-in-out;
+
   &:hover {
     transform: scale(1.1);
     fill: variables.$accent-font-color;
@@ -44,14 +72,12 @@
 }
 
 
-
 .donate_list_item {
   @include variables.hover-underline();
 }
 
 
-
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 500px) {
   .footer {
     padding: 50px 0;
     height: unset;
@@ -80,4 +106,5 @@
   .contacts_title, .donate_title {
     text-align: center;
   }
+
 }
