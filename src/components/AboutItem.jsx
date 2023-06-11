@@ -4,7 +4,7 @@ import styles from "../styles/about_item.module.scss"
 
 const AboutItem = (props) => {
     const { data } = props;
-    const [isVisible, setIsVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(true);
 
     const handleShowDescription = () => {
         setIsVisible(!isVisible);
