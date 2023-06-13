@@ -3,7 +3,7 @@ import styles from "../styles/about.module.scss";
 import about from "../components/data/about.json";
 import AboutItem from "../components/AboutItem";
 
-const Layout = () => {
+const About = () => {
     return (
         <main className={styles.about}>
             <div className={`wrapper ${styles.wrapper}`}>
@@ -18,4 +18,4 @@ const Layout = () => {
     );
 };
 
-export default Layout;
+export default About;
