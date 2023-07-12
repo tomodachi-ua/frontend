@@ -7,16 +7,17 @@ import Loader from "../components/Loader";
 const Layout = () => {
     const [loading, setLoading] = useState(false);
 
-    if (loading) {
-        return (
-            <Loader/>
-        )
-    }
     return (
         <>
-            <Header />
-            <Outlet context={[loading, setLoading]}/>
-            <Footer/>
+            {loading && <Loader/>}
+
+            {!loading &&
+                <>
+                    <Header/>
+                    <Outlet context={[loading, setLoading]}/>
+                    <Footer/>
+                </>
+            }
         </>
     );
 };
