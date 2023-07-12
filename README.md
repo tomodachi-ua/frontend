@@ -13,7 +13,7 @@ Our contacts:
 You need to clone 3 repositories to the folder:
 
 * frontend
-* backend
+* backend-node
 * tomodachi_deploy
 
 The second step is to download the [docker](https://www.docker.com/)
