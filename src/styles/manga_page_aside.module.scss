@@ -48,3 +48,59 @@
     @include variables.justify-content(space-between);
   }
 }
+
+.title {
+  width: 90%;
+  font-weight: 800;
+  font-size: 25px;
+  letter-spacing: -0.05em;
+  line-height: 130%;
+  text-transform: uppercase;
+  color: #161616;
+  margin: 20px 0;
+  @media only screen and (max-width: 1000px) {
+    font-size: 45px;
+  }
+  @media only screen and (max-width: 650px) {
+    font-size: 35px;
+  }
+}
+
+.alt_names_item:not(:last-child):after {
+  content: "/";
+  margin-left: 10px;
+}
+
+.list_title {
+  font-weight: 800;
+  font-size: 16px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.list {
+  @include variables.dispFlex();
+  @include variables.flex-direction-row(row);
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: #161616;
+  margin-bottom: 20px;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.item {
+  padding: 5px;
+  border-radius: 5px;
+  background-color: variables.$accent-font-color;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  cursor: pointer;
+}

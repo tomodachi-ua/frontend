@@ -5,22 +5,6 @@
 
 }
 
-.title {
-  width: 90%;
-  font-weight: 800;
-  font-size: 50px;
-  letter-spacing: -0.05em;
-  line-height: 130%;
-  text-transform: uppercase;
-  color: #161616;
-  margin: 20px 0;
-  @media only screen and (max-width: 1000px) {
-    font-size: 45px;
-  }
-  @media only screen and (max-width: 650px) {
-    font-size: 35px;
-  }
-}
 .list {
   @include variables.dispFlex();
   @include variables.flex-direction-row(row);
@@ -61,9 +45,4 @@
   letter-spacing: 0.05em;
   line-height: 120%;
   color: #161616;
-}
-
-.alt_names_item:not(:last-child):after {
-  content: "/";
-  margin-left: 10px;
 }
